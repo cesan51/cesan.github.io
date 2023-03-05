@@ -1,0 +1,482 @@
+<html lang="en">
+ 
+
+<!--Enlace Bootstrap-->>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+    <!--Enlace Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+
+    <!--Enlace CSS -->
+    <link rel="stylesheet" href="/src/app/static/css/layout.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Desarrollador de Software. Pagina Web Informativa">
+      <meta name="author" content="CESAR ANTONIO GÓMEZ MONTAÑO">
+      <meta name="generator" content="CESAN">
+     
+  
+      <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+  
+  </head>
+  
+  <!-- Hoja de estilos -->
+  <style>
+    
+    .container-fluid li a:hover{
+            background-color: aqua;
+            border: aqua;
+
+        }
+        .image_principal{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin-top: 2%;
+        }
+
+       .image_texto{
+           color:white;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           font-size: 2rem;
+           
+           padding: 20px;
+           font-family: Arial, Helvetica, sans-serif;    
+        }
+
+        .sobre h1{
+            font-size: 1.6rem;
+        }
+        .sobre h2{
+            font-size: 1.4rem;
+        }
+
+        .sobre p{
+            font-size: 1.2rem;
+        }
+
+        .container-fluid button{
+            background-color: rgba(240, 248, 255, 0.479);
+            border:rgba(240, 248, 255, 0.479) ;
+        }
+        .sobre{
+            margin-left: 7%;
+            margin-right: 7%;
+            margin-top: 3%;
+        }
+        .btn:hover{
+            background-color: aqua;
+            border: aqua;
+        }
+        .proyects{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .col-lg-4 img{
+            transition: 0.2s;
+            object-fit: cover;
+        }
+        .col-lg-4 img:hover{
+            transform: scale(1.2);
+        }
+        .col-lg-4{
+            text-align: center;
+        }
+        .col-lg-4 img{
+            transition: 0.2s;
+            object-fit: cover;
+        }
+        .col-lg-4 img:hover{
+            transform: scale(1.2);
+        }
+        .col-lg-4 img{
+            transition: 0.2s;
+            object-fit: cover;
+        }
+        .col-lg-4 img:hover{
+            transform: scale(1.2);
+        }
+        .container{
+            background-color: whitesmoke;
+            margin: 2% auto;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        .col-lg-4 img{
+            transition: 0.2s;
+            object-fit: cover;
+        }
+        .col-lg-4 img:hover{
+            transform: scale(1.2);
+        }
+        .py-5{
+            font-size: 0.8rem;
+       }
+        
+
+  </style>
+  
+  
+  <body><header>
+     <!--Cabeza Navbar-->
+    <nav class="bg-dark navbar navbar-expand-md bg-  fixed-top text-white ">
+      <div class="container-fluid">
+        <a class="text-white navbar-brand" href="#">CESAN</a>
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+         
+          
+  
+             <li class="nav-item dropdown">
+               <a class="text-white nav-link " aria-current="page" href="#sobre_mi">Sobre mí</a>
+             </li>
+ 
+        
+           <li class="nav-item dropdown ">
+                <a class="text-white nav-link " aria-current="page" href="#skills">Skills</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link " aria-current="page" href="#proyectos">Proyectos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="text-white nav-link " aria-current="page" href="#certificados">Certificados</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="text-white nav-link " aria-current="page" href="#contactanos">Contactame</a>
+            </li>
+  
+           
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+ 
+
+
+    <!--Imagen Principal de desarrollo -->
+      <div class="image_principal">
+        <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/source.jpg" class="d-block w-100 width:100%" alt="Fondo programing">
+        
+        <p class="image_texto ">
+            <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/cesan.webp" class="bd-placeholder-img " width="90" height="90" alt="">
+        </p>
+      </div>
+    <!--/.Imagen Principal de desarrollo-->
+
+
+
+
+        <!--Descripción de habilidades -->
+        <a id="sobre_mi"></a>
+         <!--Texto y contenido -->
+      <div class="container1">
+        <div class="sobre">
+            
+  
+          <a id="sobre_mi"></a>
+          <br>
+          <div class="row featurette">
+            <div class="center">
+              <h1 class="featurette-heading fw-normal lh-1">Te cuento un poco sobre mí.</h1>
+              <h2 class="featurette-heading fw-normal lh-2">Soy César Gómez, Desarrollador Web e Ingeniero de Sistemas.</h2>
+              <p class="lead">Soy un profesional capacitado en manejo de la información y archivística,
+                 además cuento con habilidades sociales y éticas que me permiten tener una buena
+                comunicación con mis compañeros de trabajo, logrando facilitar los procesos
+                 que se requieran llevar a cabo, cuento con una gran habilidad lógica
+                 para la solución de problemas, gracias a mí conocimiento como estudiante de 
+                 ingeniería de sistemas y a mis habilidades adquiridas en servicio al cliente.<br>
+                 
+            </p>
+              <p class="lead">-Deportista<BR> -Filósofo<BR> -Aficionado a las artes marciales<BR> -Pronto maestro.</p>
+            
+          
+              </div>
+              <p><a class="btn btn-secondary " href="https://drive.google.com/file/d/16yMFFjO5BWi7bVRzAxZVQVkC0392QCVs/view?usp=sharing" target="_blank">Curriculum </a></p>
+         </div>
+          </div>
+          
+      </div><!--/.Descripción de habilidades -->
+
+
+      
+      
+      <!--Container Skills -->
+       <a id="skills"></a><br>
+       <div class="container">
+           <!-- row skills -->
+          <hr class="featurette-divider">
+          <h3> Habilidades</h3><br><br>
+          <div class="row">
+
+            <div class="col-lg-4">
+               <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/python_pro.png" class="bd-placeholder-img rounded-circle" width="110" height="110" alt="">
+      
+              <h2 class="fw-normal">Python</h2>
+              <p><a class="btn btn-secondary" href="https://www.python.org/" target="_blank">Conoce más »</a></p>
+            </div><!-- /python -->
+
+        
+
+            <div class="col-lg-4">
+              <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/html2.png" class="bd-placeholder-img rounded-circle" width="110" height="110" margin-right="15px" alt="">
+              
+              <h2 class="fw-normal">HTML</h2>
+              
+              <p><a class="btn btn-secondary" href="https://www.w3.org/TR/html/" target="_blank">Conoce más »</a></p>
+            </div><!-- /HTML -->
+
+
+            
+            <div class="col-lg-4">
+                <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/css1.png" class="bd-placeholder-img rounded-circle" width="110" height="110" margin-right="15px" alt="">
+                
+                <h2 class="fw-normal">CSS</h2>
+                
+                <p><a class="btn btn-secondary" href="https://www.w3.org/Style/CSS/" target="_blank">Conoce más »</a></p>
+            </div><!-- /CSS -->
+
+
+            <div class="col-lg-4">
+                <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/angular.jpg" class="bd-placeholder-img rounded-circle" width="110" height="110" margin-right="15px" alt="">
+                
+                <h2 class="fw-normal">Angular</h2>
+                
+                <p><a class="btn btn-secondary" href="https://angular.io/docs" target="_blank">Conoce más »</a></p>
+              </div><!-- /Angular -->
+  
+  
+              
+              <div class="col-lg-4">
+                  <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/bootstrap.png" class="bd-placeholder-img rounded-circle" width="110" height="110" margin-right="15px" alt="">
+                  
+                  <h2 class="fw-normal">Bootstrap</h2>
+                  <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/" target="_blank">Conoce más »</a></p>
+                </div><!-- /Bootsrap -->
+
+
+                <div class="col-lg-4">
+                    <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/flask_pro.png"  class="bd-placeholder-img rounded-circle" width="110" height="110" margin-right="15px" alt="">
+                    
+                    <h2 class="fw-normal">Flask</h2>
+                    <p><a class="btn btn-secondary" href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">Conoce más »</a></p>
+                </div><!-- /Flask -->
+
+             
+          </div><!-- /.row -->
+      
+        </div><!-- /.Container Skills -->
+
+
+
+
+     <!--Container Proyectos -->
+     <a id="proyectos"></a><br>
+  <div class="container">
+    <div class="proyects">
+        <hr class="featurette-divider">
+        <h3> Proyectos</h3><br><br>
+        <div class="row">
+
+          <div class="col-lg-4">
+             <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/perros_gatos%20(2).png" class="bd-placeholder-img " width="120" height="160" alt="">
+    
+            <h2 class="fw-normal"><br>Clasificador de Perros y Gatos</h2>
+            <p>Red neuronal convulucional Python<br>
+               Capaz de clasificar mediante video en vivo. </p>
+            <p><a class="btn btn-secondary" href="#" target="_blank">Conoce más »</a></p>
+          </div><!-- / .Clasificador Perros_Gatos -->
+      
+
+          <div class="col-lg-4">
+            <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/cgm_plantilla.png" class="bd-placeholder-img " width="300" height="160" margin-right="15px" alt="">
+            
+            <h2 class="fw-normal"><br>Servi Constru Gases Montaño.</h2>
+            <p>Plantilla de pagina web realizada con angular para la empresa<br>
+               Servi Constru Gases Momntaño.</p>  
+            <p><a class="btn btn-secondary" href="#" target="_blank">Conoce más »</a></p>
+          </div><!-- / .Constru Gases Montaño -->
+
+
+          
+          <div class="col-lg-4">
+              <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/agricultores.png" class="bd-placeholder-img" width="120" height="160" margin-right="15px" alt="">
+              
+              <h2 class="fw-normal"><br>Desventajas de los agricultores al no vender sus productos directamente al consumidor y proveedor final...</h2>
+              <p>Anteproyecto realizado en el Municipio de Andalucía, Valle. </p> 
+              <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1xiK21nmqhFEw6ckvZ7CzcRb6NJnx39Pw/view?usp=sharing" target="_blank">Conoce más »</a></p>
+          </div><!-- / .Anteproyecto Agricultores -->
+
+
+          <div class="col-lg-4">
+              <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/auditoria.png" class="bd-placeholder-img " width="120" height="160" margin-right="15px" alt="">
+              <h2 class="fw-normal"><br>Auditoría de Red de la Alcaldía Municipal de Andalucía, Valle del cauca.</h2>
+              <p>Desarrollo de auditoría de redes de la Alcaldía de Andalucia, Valle del Cauca, Colombia.</p>
+              <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1TkDiMhEbD9jFQW0Ji8RzdExNz6Oh8F8d/view?usp=sharing" target="_blank">Conoce más »</a></p>
+            </div><!-- / .Auditoría de redes -->
+
+
+            
+            <div class="col-lg-4">
+                <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/gamificacion.png" class="bd-placeholder-img" width="120" height="160" margin-right="15px" alt="">
+                <h2 class="fw-normal"><br>Gamificación.</h2>
+                <p>Actividad de gamificación realizada en la Corporación Universitaria Remington Cat Tuluá.</p>
+                <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1_3o6okYMKLmF_UE2QcxjyYGGm2W2fTzV/view?usp=sharing" target="_blank">Conoce más »</a></p>
+            </div><!-- / .Actividad de Gamificacion -->
+
+
+            <div class="col-lg-4">
+                <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/informe.png" class="bd-placeholder-img" width="120" height="160" margin-right="15px" alt="">  
+                <h2 class="fw-normal"><br> Seguridad informática enfocada en los trabajadore de los entornos empresariales. </h2>
+                <p>Informe sobre Seguridad informatica como parte de seminario de Ciber Seguridad.</p>
+                <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/14S-2YorW9gdFvO3kMK_Pn4l8YGJZ2ITL/view?usp=share_link" target="_blank">Conoce más »</a></p>
+            </div><!-- / .Informe Ciber Seguridad -->
+  
+           
+        </div><!-- /.row -->
+        
+    </div>
+   </div><!--/ .Container Proyectos-->
+
+
+  
+
+
+    <!--Container Certificados -->
+   <a id="certificados"></a><br>
+   <div class="container">
+    <div class="proyects">
+        <hr class="featurette-divider">
+        <h3> Certificados</h3>
+        <h2>Si deseas mas información contactame</h2><br><br>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/ciber.png" class="bd-placeholder-img " width="270" height="200" alt="">
+       
+               <h2 class="fw-normal"><br>Seminario Ciber Seguridad. Seminario.</h2>
+               <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1igMuQW7BrYyiSYzT8cYQ-eyrSaPVEqYl/view?usp=sharing" target="_blank">Verifica »</a></p>
+             </div><!-- / .ciber seguridad Diploma -->
+   
+
+             <style> 
+                 .col-lg-4 img{
+                     transition: 0.2s;
+                     object-fit: cover;
+                 }
+                 .col-lg-4 img:hover{
+                     transform: scale(1.2);
+                 }
+             </style>
+         
+   
+             <div class="col-lg-4">
+               <img src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/atencion.png" class="bd-placeholder-img " width="270" height="200" margin-right="15px" alt="">
+               
+               <h2 class="fw-normal"><br>Atención y servicio al cliente. Diploma.</h2>
+               
+               <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1hjYWq1v74cXotN3gA6oRCbA6tqq4wDLl/view?usp=sharing" target="_blank">Verifica »</a></p>
+             </div><!-- / .Atencion al cliente Diploma -->
+
+
+          
+
+           
+           
+        </div><!-- /.row -->
+    
+        
+    </div>
+   </div><!--/.Container Certificaciones-->
+
+     
+        
+
+            
+     <!-- Pie de pagina-->
+     <a id="contactanos"></a><br><br>
+  <div class="b-example-divider"></div>
+  
+  <div class="bg-dark text-secondary mt-5 px-4 py-2 text-center">
+
+
+    <div class="py-5">
+      <h3 class="display-5 fw-bold text-white">cesan51</h3>
+      <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4 text-white">Desarrollador de Software</p> <p></p>
+          <div class="row">
+
+            <div class="col-lg-4">
+                <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/whatsapp.webp" class="bd-placeholder-img " width="35" height="35" alt="">
+                <p class="fs-1 mb-1 text-white">Whatsapp: 3223823977</p>
+               <p><a class="btn btn-secondary text-white" href="https://wa.me/573223823977">whatsapp</a></p>
+            </div><!-- / .whatsapp -->
+    
+         
+    
+         <div class="col-lg-4">
+            <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/gmail.webp" class="bd-placeholder-img " width="35" height="35" alt="">
+            <p class="fs-1 mb-1 text-white">Gmail: cesantonigo@gmail.com</p>
+           <p><a class="btn btn-secondary text-white" href="https://www.google.com/intl/es-419/gmail/about/">Gmail</a></p>
+         </div><!-- / .gmail -->
+
+
+         <div class="col-lg-4">
+            <img  src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/assets/GitHub-Logo.png" class="bd-placeholder-img " width="35" height="35" alt="">
+            <p class="fs-1 mb-1 text-white">GitHub: cesan51</p>
+           <p><a class="btn btn-secondary text-white" href="https://github.com/">GitHub</a></p>
+         </div><!-- / .whatsapp --> 
+           
+        </div><!-- /.row contacto-->
+
+      </div>
+
+    </div>
+
+
+    <h2 class="float-end"><a href="#">Sube</a></h2>
+
+      <h2><a href="https://drive.google.com/file/d/1n2pzteCidC-ZJWo1ROi2VePupqLDx9KU/view?usp=sharing" target="_blank">Terminos y Condiciones</a><br><br>
+        © 2022. 
+      
+      Desarrollador: César Antonio Gómez Montaño <br></h2>
+  </div><!-- /.Pie de pagina-->
+
+
+
+
+<!-- Scripts Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+ <!-- Script js-->
+<script src="file:///C:/Users/Usuario/Documents/Proyectos%20A%20Mostrar/CESAN_WEB/src/app/static/js/layout.js"></script>
+
+  </body></html>
+
+
+ 
